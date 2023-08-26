@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header';
 import SearchEngineOptimize from './utils/SearchEngineOptimize';
-import aboutBG from '../assets/img/about-bg.jpg';
+import aboutBG from '/src/assets/img/about-bg.jpg';
 
 interface AboutProps {
     // Add any props you might need

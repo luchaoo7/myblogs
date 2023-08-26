@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header';
 import SearchEngineOptimize from './utils/SearchEngineOptimize';
-import contactBG from '../assets/img/contact-bg.jpg';
+import contactBG from '/src/assets/img/contact-bg.jpg';
 
 interface ContactMeProps {
     // Add any props you might need
