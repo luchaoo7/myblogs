@@ -6,10 +6,11 @@ import SmallHeading from '../utils/SmallHeading';
 import SmallerHeading from '../utils/SmallerHeading';
 import PostImage from '../utils/PostImage';
 import Divider from '../utils/Divider';
-import basketballBG from '/src/assets/img/basketball-bg.jpg';
-import nbaPlayOff from '/src/assets/img/nba-playoff.jpg';
-import easternConference from '/src/assets/img/eastern-conference.png';
-import westernConference from '/src/assets/img/western-conference.png';
+import { 
+    basketballBG, 
+    easternConference, 
+    nbaPlayOff, 
+    westernConference } from '../utils/ImageImporter';
 
 interface NBABlogProps {
     // Add any props you might need
