@@ -6,6 +6,7 @@ import SmallHeading from '../utils/SmallHeading';
 import SmallerHeading from '../utils/SmallerHeading';
 import PostImage from '../utils/PostImage';
 import Divider from '../utils/Divider';
+import basketballBG from '../../assets/img/basketball-bg.jpg';
 
 interface NBABlogProps {
     // Add any props you might need
@@ -17,7 +18,7 @@ const NBABlog = ({ }: NBABlogProps): JSX.Element => {
         <>
             <Header 
                 heading="NBA Structure"
-                backgroundImage="img/basketball-bg.jpg"
+                backgroundImage={basketballBG}
                 subHeading="Unraveling the NBA's Unique Structure"
             />
             <SearchEngineOptimize
