@@ -15,7 +15,7 @@ const SampleBlog = ({ }: SampleBlogProps): JSX.Element => {
         <>
             <Header 
                 heading="Man must explore"
-                backgroundImage="src/assets/img/post-bg.jpg"
+                backgroundImage="img/post-bg.jpg"
                 subHeading="From way up, problems are irrelevant."
             />
             <SearchEngineOptimize
@@ -42,7 +42,7 @@ const SampleBlog = ({ }: SampleBlogProps): JSX.Element => {
                             <SectionHeading heading="Reaching for the Stars" />
                             <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
                             <PostImage 
-                                image_path=" src/assets/img/post-sample-image.jpg"
+                                image_path="img/post-sample-image.jpg"
                                 caption="To go places and do things that have never been done before – that’s what living is all about."
                             />
                             <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
