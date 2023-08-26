@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header';
 import SearchEngineOptimize from './utils/SearchEngineOptimize';
+import aboutBG from '../assets/img/about-bg.jpg';
 
 interface AboutProps {
     // Add any props you might need
@@ -13,7 +14,7 @@ const About = ({ }: AboutProps): JSX.Element => {
             <Header 
                 heading="About Me"
                 subHeading="This is what we do"
-                backgroundImage="img/about-bg.jpg"
+                backgroundImage={aboutBG}
             />
             <SearchEngineOptimize
                 title="About"

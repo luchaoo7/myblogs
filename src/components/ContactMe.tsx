@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header';
 import SearchEngineOptimize from './utils/SearchEngineOptimize';
+import contactBG from '../assets/img/contact-bg.jpg';
 
 interface ContactMeProps {
     // Add any props you might need
@@ -12,7 +13,7 @@ const ContactMe = ({ }: ContactMeProps): JSX.Element => {
         <>
             <Header 
                 heading="Contact Me"
-                backgroundImage="img/contact-bg.jpg"
+                backgroundImage={contactBG}
                 subHeading="Have questions? I have answers."
             />
             <SearchEngineOptimize
