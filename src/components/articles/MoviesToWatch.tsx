@@ -5,7 +5,6 @@ import Header from '../Header';
 import SmallerHeading from '../utils/SmallerHeading';
 import Divider from '../utils/Divider';
 import basketballBG from '/src/assets/img/movie-bg.jpg';
-import Quote from '../utils/Quote';
 
 interface MoviesToWatchProps {
     // Add any props you might need
@@ -44,8 +43,9 @@ const MoviesToWatch = ({ }: MoviesToWatchProps): JSX.Element => {
                             </p>
                             <Divider />
 
+                            <SmallerHeading heading="Training Day "/>
                             <p>
-                                <b><Quote quote="Training Day"/> </b> is a crime thriller film that follows the life of a rookie cop, Jake Hoyt, who is assigned to work with a seasoned, but morally ambiguous detective, Alonzo Harris, for a 24-hour period in the gang-ridden neighborhoods of Los Angeles. As the day progresses, Hoyt is faced with ethical dilemmas that challenge his values and ultimately lead him to question the integrity of his mentor.
+                                "Training Day" is a crime thriller film that follows the life of a rookie cop, Jake Hoyt, who is assigned to work with a seasoned, but morally ambiguous detective, Alonzo Harris, for a 24-hour period in the gang-ridden neighborhoods of Los Angeles. As the day progresses, Hoyt is faced with ethical dilemmas that challenge his values and ultimately lead him to question the integrity of his mentor.
                             </p>
                             <SmallerHeading heading="Gladiator"/>
                             <p>
