@@ -19,7 +19,6 @@ function App() {
           <Routes>
             <Route path="/" element={<NBABlog />} />
             <Route path="/nba" element={<NBABlog />} />
-            <Route path="/first" element={<NBABlog />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactMe />} />
           </Routes>
