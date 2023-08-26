@@ -7,6 +7,9 @@ import SmallerHeading from '../utils/SmallerHeading';
 import PostImage from '../utils/PostImage';
 import Divider from '../utils/Divider';
 import basketballBG from '../../assets/img/basketball-bg.jpg';
+import nbaPlayOff from '../../assets/img/nba-playoff.jpg';
+import easternConference from '../../assets/img/eastern-conference.png';
+import westernConference from '../../assets/img/western-conference.png';
 
 interface NBABlogProps {
     // Add any props you might need
@@ -72,10 +75,10 @@ const NBABlog = ({ }: NBABlogProps): JSX.Element => {
                             <div className="container text-center">
                                 <div className="row align-items-start">
                                     <div className="col">
-                                        <PostImage image_path="/img/western-conference.png" />
+                                        <PostImage image_path={westernConference} />
                                     </div>
                                     <div className="col">
-                                        <PostImage image_path="/img/eastern-conference.png" />
+                                        <PostImage image_path={easternConference} />
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +99,7 @@ const NBABlog = ({ }: NBABlogProps): JSX.Element => {
                                 fostering competitive balance.
                             </p>
                             <SmallHeading heading="3. Playoffs"/>
-                            <PostImage image_path="/img/nba-playoff.jpg" />
+                            <PostImage image_path={nbaPlayOff} />
                             <p>
                                 The NBA Playoffs are an exciting time of the year when the top eight teams from each conference, 
                                 based on their regular-season records, compete for the championship.
