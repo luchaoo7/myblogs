@@ -1,3 +1,11 @@
+# Images
+For faster load time, resize images to -resize 1710x1350 -quality 95 if bigger than 1M
+
+```js
+convert <image_name>.jpg -resize 1710x1350 -quality 95 <output_image_name>.jpg
+```
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
