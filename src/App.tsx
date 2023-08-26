@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import { HelmetProvider } from 'react-helmet-async';
 import ContactMe from './components/ContactMe';
 import NBABlog from './components/articles/NBABlog';
+import MoviesToWatch from './components/articles/MoviesToWatch';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<NBABlog />} />
+            <Route path="/movies" element={<MoviesToWatch />} />
             <Route path="/nba" element={<NBABlog />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactMe />} />
