@@ -2,7 +2,6 @@ import React from 'react'
 import SearchEngineOptimize from '../utils/SearchEngineOptimize';
 import SectionHeading from '../utils/SectionHeading';
 import Header from '../Header';
-import SmallHeading from '../utils/SmallHeading';
 import SmallerHeading from '../utils/SmallerHeading';
 import Divider from '../utils/Divider';
 import basketballBG from '/src/assets/img/movie-bg.jpg';
