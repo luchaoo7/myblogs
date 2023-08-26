@@ -13,7 +13,7 @@ const About = ({ }: AboutProps): JSX.Element => {
             <Header 
                 heading="About Me"
                 subHeading="This is what we do"
-                backgroundImage="src/assets/img/about-bg.jpg"
+                backgroundImage="img/about-bg.jpg"
             />
             <SearchEngineOptimize
                 title="About"

@@ -12,7 +12,7 @@ const ContactMe = ({ }: ContactMeProps): JSX.Element => {
         <>
             <Header 
                 heading="Contact Me"
-                backgroundImage="src/assets/img/contact-bg.jpg"
+                backgroundImage="img/contact-bg.jpg"
                 subHeading="Have questions? I have answers."
             />
             <SearchEngineOptimize
