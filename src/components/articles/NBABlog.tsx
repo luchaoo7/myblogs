@@ -71,10 +71,10 @@ const NBABlog = ({ }: NBABlogProps): JSX.Element => {
                             <div className="container text-center">
                                 <div className="row align-items-start">
                                     <div className="col">
-                                        <PostImage image_path="img/western-conference.png" />
+                                        <PostImage image_path="/img/western-conference.png" />
                                     </div>
                                     <div className="col">
-                                        <PostImage image_path="img/eastern-conference.png" />
+                                        <PostImage image_path="/img/eastern-conference.png" />
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +95,7 @@ const NBABlog = ({ }: NBABlogProps): JSX.Element => {
                                 fostering competitive balance.
                             </p>
                             <SmallHeading heading="3. Playoffs"/>
-                            <PostImage image_path="img/nba-playoff.jpg" />
+                            <PostImage image_path="/img/nba-playoff.jpg" />
                             <p>
                                 The NBA Playoffs are an exciting time of the year when the top eight teams from each conference, 
                                 based on their regular-season records, compete for the championship.
