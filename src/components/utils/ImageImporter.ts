@@ -16,6 +16,7 @@ import basketballBG from '/src/assets/img/basketball-bg.jpg';
 import nbaPlayOff from '/src/assets/img/nba-playoff.jpg';
 import easternConference from '/src/assets/img/eastern-conference.png';
 import westernConference from '/src/assets/img/western-conference.png';
+import pythonBG from '/src/assets/img/python-bg.png';
 
 
 export {
@@ -36,5 +37,6 @@ export {
     theGodfather,
     theWolfOfWallStreet,
     trainingDay,
+    pythonBG,
     bloodDiamond
 }
