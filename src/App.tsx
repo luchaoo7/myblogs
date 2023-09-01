@@ -9,6 +9,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import ContactMe from './components/ContactMe';
 import NBABlog from './components/articles/NBABlog';
 import MoviesToWatch from './components/articles/MoviesToWatch';
+import PythonBlog from './components/articles/PythonBlog';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<NBABlog />} />
+            <Route path="/python" element={<PythonBlog />} />
             <Route path="/movies" element={<MoviesToWatch />} />
             <Route path="/nba" element={<NBABlog />} />
             <Route path="/about" element={<About />} />
