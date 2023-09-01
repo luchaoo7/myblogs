@@ -24,11 +24,10 @@ const PythonBlog = ({ }: PythonBlogProps): JSX.Element => {
         color: "#b3a630"
     }
     let postImageStyle: CSSProperties | undefined = {
-        float: "right",
-        overflow: "auto",
-        height: "150px",
-        width: "150px",
-        marginRight: "50px"
+        height: "10vw",
+        width: "10vw",
+        position: "fixed",
+
     }
 
 
