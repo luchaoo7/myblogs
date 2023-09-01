@@ -5,7 +5,7 @@ import Header from '../Header';
 // import SmallHeading from '../utils/SmallHeading';
 // import SmallerHeading from '../utils/SmallerHeading';
 import PostImage from '../utils/PostImage';
-import { pythonBG } from '../utils/ImageImporter';
+import { pythonBG, pythonLogo } from '../utils/ImageImporter';
 import Divider from '../utils/Divider';
 // import Divider from '../utils/Divider';
 
@@ -23,6 +23,13 @@ const PythonBlog = ({ }: PythonBlogProps): JSX.Element => {
     let headingStyle: CSSProperties | undefined = {
         color: "#b3a630"
     }
+    let postImageStyle: CSSProperties | undefined = {
+        float: "right",
+        overflow: "auto",
+        height: "150px",
+        width: "150px",
+        marginRight: "50px"
+    }
 
 
 
@@ -39,6 +46,8 @@ const PythonBlog = ({ }: PythonBlogProps): JSX.Element => {
                 name="Python Code"
                 type="article"
             />
+
+            <PostImage style={postImageStyle} image_path={pythonLogo} />
 
             <article className="mb-4">
                 <div className="container px-4 px-lg-5">
