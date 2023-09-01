@@ -4,6 +4,10 @@ For faster load time, resize images to -resize 1710x1350 -quality 95 if bigger t
 ```js
 convert <image_name>.jpg -resize 1710x1350 -quality 95 <output_image_name>.jpg
 ```
+Resize image 
+```js
+convert movie-bg.jpg -resize 75% -quality 80 movie-bg.jpg
+```
 
 
 # React + TypeScript + Vite
