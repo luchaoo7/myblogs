@@ -12,6 +12,7 @@ interface HeaderProps {
 const Header = ({ heading, backgroundImage, subHeading }: HeaderProps): JSX.Element => {
 
     const style: CSSProperties = {
+        padding:"50px",
         backgroundImage: `url('${backgroundImage}')`
     }
 

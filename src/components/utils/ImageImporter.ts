@@ -18,9 +18,21 @@ import easternConference from '/src/assets/img/eastern-conference.png';
 import westernConference from '/src/assets/img/western-conference.png';
 import pythonBG from '/src/assets/img/python-bg.png';
 import pythonLogo from '/src/assets/img/python-logo.png';
+import cat1 from '/src/assets/img/cat.jpg';
+import cat2 from '/src/assets/img/cat2.jpg';
+import cat3 from '/src/assets/img/cat3.jpg';
+import drynkBG from '/src/assets/img/drynkBG.png';
+import drynkBG2 from '/src/assets/img/drynkBG2.png';
+import drynkBG3 from '/src/assets/img/drynkBG3.png';
 
 
 export {
+    drynkBG3,
+    drynkBG2,
+    drynkBG,
+    cat1,
+    cat2,
+    cat3,
     basketballBG,
     nbaPlayOff,
     easternConference,

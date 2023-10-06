@@ -95,6 +95,7 @@ const NBABlog = ({ }: NBABlogProps): JSX.Element => {
                                 <li>Teams play against the other teams in their conference either three or four times.</li>
                                 <li>They also play against teams from the opposite conference twice (one home and one away).</li>
                             </ul>
+
                             <p>
                                 This structure ensures that every team has an opportunity to play against all other teams in the league,
                                 fostering competitive balance.

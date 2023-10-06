@@ -5,13 +5,14 @@ interface PostImageProps {
     image_path: string;
     caption?: string;
     style?: CSSProperties;
+    className?: string;
 }
 
-const PostImage = ({ image_path, caption, style }: PostImageProps): JSX.Element => {
+const PostImage = ({ image_path, caption, style, className }: PostImageProps): JSX.Element => {
 
     return (
         <>
-            <img style={style} className="img-fluid" src={image_path} alt="..." />
+            <img style={style} className={`img-fluid ${className}`} src={image_path} alt="..." />
             { caption ?  <span className="caption text-muted">{caption}</span> : null }
         </>
     );

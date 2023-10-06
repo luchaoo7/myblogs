@@ -11,10 +11,11 @@ import Divider from '../utils/Divider';
 
 interface PythonBlogProps {
     // Add any props you might need
+    component?: React.ComponentType<any>;
+    name?: string;
 }
 
-const PythonBlog = ({ }: PythonBlogProps): JSX.Element => {
-
+const PythonBlog: React.FC<PythonBlogProps> = ({name}) => {
     let boldStyle: CSSProperties | undefined = {
         fontSize: "30px",
         color: "#839bf9"
@@ -29,8 +30,6 @@ const PythonBlog = ({ }: PythonBlogProps): JSX.Element => {
         position: "fixed",
 
     }
-
-
 
     return (
         <>
@@ -51,7 +50,7 @@ const PythonBlog = ({ }: PythonBlogProps): JSX.Element => {
             <article className="mb-4">
                 <div className="container px-4 px-lg-5">
                     <div className="row gx-4 gx-lg-5 justify-content-center">
-                        <div className="col-md-10 col-lg-8 col-xl-7">
+                        <div className="col-md-10 col-lg-8 col-xl-7 shadow">
 
                             <SectionHeading style={headingStyle} heading="Getting Started with Python" />
                             <p>Welcome to the world of coding! If you're just stepping into the exciting realm of programming, learning Python is an excellent choice to kickstart your journey. In this beginner's guide, we'll explore why Python is the perfect language for newcomers and highlight its pros and cons.</p>

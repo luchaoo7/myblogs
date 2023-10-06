@@ -10,6 +10,8 @@ import ContactMe from './components/ContactMe';
 import NBABlog from './components/articles/NBABlog';
 import MoviesToWatch from './components/articles/MoviesToWatch';
 import PythonBlog from './components/articles/PythonBlog';
+import PythonVariablesDataBlog from './components/articles/PythonVariablesAndData';
+import Cat from './components/articles/Cats';
 
 function App() {
 
@@ -17,10 +19,13 @@ function App() {
     <HelmetProvider>
       <Router>
         <NavBar />
+        {/* <NavBar2 /> */}
         <div>
           <Routes>
             <Route path="/" element={<NBABlog />} />
-            <Route path="/python" element={<PythonBlog />} />
+            <Route path="/cat" element={<Cat />} />
+            <Route path="/python" element={<PythonBlog component={NBABlog} name="test" />} />
+            <Route path="/python/variables-datatypes" element={<PythonVariablesDataBlog />} />
             <Route path="/movies" element={<MoviesToWatch />} />
             <Route path="/nba" element={<NBABlog />} />
             <Route path="/about" element={<About />} />

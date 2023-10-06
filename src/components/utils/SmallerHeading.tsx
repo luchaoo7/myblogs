@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { CSSProperties } from 'react'
 
 interface SmallerHeadingProps {
     // Add any props you might need
     heading: string;
+    style?: CSSProperties | undefined;
 }
 
-const SmallerHeading = ({ heading }: SmallerHeadingProps): JSX.Element => {
+const SmallerHeading = ({ heading, style }: SmallerHeadingProps): JSX.Element => {
 
     return (
-        <h6 className="">{heading}</h6>
+        <h6 style={style} className="">{heading}</h6>
     );
 };
 
