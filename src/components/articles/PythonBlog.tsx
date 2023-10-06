@@ -15,16 +15,16 @@ interface PythonBlogProps {
     name?: string;
 }
 
-const PythonBlog: React.FC<PythonBlogProps> = ({name}) => {
-    let boldStyle: CSSProperties | undefined = {
+const PythonBlog: React.FC<PythonBlogProps> = () => {
+    const boldStyle: CSSProperties | undefined = {
         fontSize: "30px",
         color: "#839bf9"
     }
 
-    let headingStyle: CSSProperties | undefined = {
+    const headingStyle: CSSProperties | undefined = {
         color: "#b3a630"
     }
-    let postImageStyle: CSSProperties | undefined = {
+    const postImageStyle: CSSProperties | undefined = {
         height: "10vw",
         width: "10vw",
         position: "fixed",

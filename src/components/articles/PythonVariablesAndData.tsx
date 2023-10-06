@@ -18,21 +18,21 @@ interface PythonBlogProps {
 // We can explicitly add : JSX.Element, but it is not needed
 const PythonVariablesDataBlog = ({ }: PythonBlogProps): JSX.Element => {
 
-    let boldStyle: CSSProperties | undefined = {
+    const boldStyle: CSSProperties | undefined = {
         fontSize: "30px",
         color: "#839bf9"
     }
 
-    let headingStyle: CSSProperties | undefined = {
+    const headingStyle: CSSProperties | undefined = {
         color: "#b3a630"
     }
-    let postImageStyle: CSSProperties | undefined = {
+    const postImageStyle: CSSProperties | undefined = {
         height: "10vw",
         width: "10vw",
         position: "fixed",
     }
 
-    let codeBlockStyle: CSSProperties | undefined = {
+    const codeBlockStyle: CSSProperties | undefined = {
         backgroundColor:"black",
         color: "white",
         padding: "10px",
@@ -40,9 +40,6 @@ const PythonVariablesDataBlog = ({ }: PythonBlogProps): JSX.Element => {
         fontFamily: "monospace",
         overflow: "auto"
     }
-
-
-
 
     return (
         <>
