@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../Header';
-import { cat1, cat2, cat3 } from '../utils/ImageImporter';
+import { cat1 } from '../utils/ImageImporter';
 import SearchEngineOptimize from '../utils/SearchEngineOptimize';
 
 interface CatProps {
@@ -14,7 +14,7 @@ const Cat = ({ }: CatProps): JSX.Element => {
             <Header 
                 heading="About Me"
                 subHeading="This is what we do"
-                backgroundImage={cat3}
+                backgroundImage={cat1}
             />
             <SearchEngineOptimize
                 title="About"
