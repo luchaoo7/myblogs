@@ -12,6 +12,7 @@ import MoviesToWatch from './components/articles/MoviesToWatch';
 import PythonBlog from './components/articles/PythonBlog';
 import PythonVariablesDataBlog from './components/articles/PythonVariablesAndData';
 import Cat from './components/articles/Cats';
+import './App.css'
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
         {/* <NavBar2 /> */}
         <div>
           <Routes>
-            <Route path="/" element={<NBABlog />} />
+            <Route path="/" element={<PythonBlog component={NBABlog} name="test" />} />
             <Route path="/cat" element={<Cat />} />
             <Route path="/python" element={<PythonBlog component={NBABlog} name="test" />} />
             <Route path="/python/variables-datatypes" element={<PythonVariablesDataBlog />} />
