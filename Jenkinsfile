@@ -7,9 +7,9 @@ pipeline {
             input {
                 message: "What is your name?"
                 ok "Submit"
-                parameters {
-                    string(defaultValue: 'Dave', name: 'FIRST_NAME', trim: true)
-                }
+                parameters [
+                    string(name: 'OPTION', description: 'Provide an option')
+                ]
             }
             options {
                 timeout(time: 10, unit: 'SECONDS')
