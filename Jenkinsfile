@@ -4,18 +4,6 @@ pipeline {
     stages {
         stage('build') {
 
-            input(
-                    id: 'userInput',         // A unique identifier for this input
-                    message: 'Proceed with the build?',  // Prompt message
-                    parameters: [            // Optional input parameters
-                        string(name: 'OPTION', description: 'Provide an option')
-                    ]
-                )
-
-            options {
-                timeout(time: 10, unit: 'SECONDS')
-            }
-
             steps {
                 sh 'node --version'
                 sh '''
