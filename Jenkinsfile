@@ -4,13 +4,14 @@ pipeline {
     stages {
         stage('build') {
 
-            input {
-                message: "What is your name?"
-                ok "Submit"
-                parameters [
-                    string(name: 'OPTION', description: 'Provide an option')
-                ]
-            }
+            input(
+                    id: 'userInput',         // A unique identifier for this input
+                    message: 'Proceed with the build?',  // Prompt message
+                    parameters: [            // Optional input parameters
+                        string(name: 'OPTION', description: 'Provide an option')
+                    ]
+                )
+
             options {
                 timeout(time: 10, unit: 'SECONDS')
             }
