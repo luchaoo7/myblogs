@@ -25,10 +25,14 @@ function App() {
           <Routes>
             <Route path="/" element={<PythonBlog component={NBABlog} name="test" />} />
             <Route path="/cat" element={<Cat />} />
+
             <Route path="/python" element={<PythonBlog component={NBABlog} name="test" />} />
             <Route path="/python/variables-datatypes" element={<PythonVariablesDataBlog />} />
+
             <Route path="/movies" element={<MoviesToWatch />} />
+            
             <Route path="/nba" element={<NBABlog />} />
+
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactMe />} />
           </Routes>

@@ -2,12 +2,10 @@ import React, { CSSProperties } from 'react'
 import SearchEngineOptimize from '../utils/SearchEngineOptimize';
 import SectionHeading from '../utils/SectionHeading';
 import Header from '../Header';
-// import SmallHeading from '../utils/SmallHeading';
-// import SmallerHeading from '../utils/SmallerHeading';
 import PostImage from '../utils/PostImage';
 import { pythonBG, pythonLogo } from '../utils/ImageImporter';
 import Divider from '../utils/Divider';
-// import Divider from '../utils/Divider';
+import { Link } from 'react-router-dom';
 
 interface PythonBlogProps {
     // Add any props you might need
@@ -22,13 +20,13 @@ const PythonBlog: React.FC<PythonBlogProps> = () => {
     }
 
     const headingStyle: CSSProperties | undefined = {
-        color: "#b3a630"
+        color: "#b3a630",
+        fontFamily:'av'
     }
     const postImageStyle: CSSProperties | undefined = {
         height: "10vw",
         width: "10vw",
         position: "fixed",
-
     }
 
     return (
@@ -50,10 +48,10 @@ const PythonBlog: React.FC<PythonBlogProps> = () => {
             <article className="mb-4">
                 <div className="container px-4 px-lg-5">
                     <div className="row gx-4 gx-lg-5 justify-content-center">
-                        <div className="col-md-10 col-lg-8 col-xl-7 shadow">
+                        <div className="col-md-11 col-lg-9 col-xl-9 shadow">
 
                             <SectionHeading style={headingStyle} heading="Getting Started with Python" />
-                            <p>Welcome to the world of coding! If you're just stepping into the exciting realm of programming, learning Python is an excellent choice to kickstart your journey. In this beginner's guide, we'll explore why Python is the perfect language for newcomers and highlight its pros and cons.</p>
+                            <p> Welcome to the world of coding! If you're just stepping into the exciting realm of programming, learning Python is an excellent choice to kickstart your journey. In this beginner's guide, we'll explore why Python is the perfect language for newcomers and highlight its pros and cons.</p>
                             <Divider />
 
                             <SectionHeading style={headingStyle} heading="Pros of Learning Python" />
@@ -76,11 +74,22 @@ const PythonBlog: React.FC<PythonBlogProps> = () => {
                             <SectionHeading heading="Conclusion" />
                             <p>Embarking on your coding journey with Python is a wise decision. Its simplicity, versatility, and strong community support make it an ideal choice for beginners. So dive in, explore the vast world of programming, and unlock endless possibilities with Python!
                                 Happy coding! 🚀</p>
-
                         </div>
+
+
+                        <div className="col-md-1 col-lg-3 col-xl-3 shadow-sm">
+                            <Link  className="nav-link px-lg-3 py-3 py-lg-4" to="/">Home</Link>
+                            <Divider />
+                            <Link  className="nav-link px-lg-3 py-3 py-lg-4" to="/python/variables-datatypes">Python Types</Link>
+                            <Divider />
+                        </div>
+
+
+                        
                     </div>
                 </div>
             </article>
+
         </>
     );
 };

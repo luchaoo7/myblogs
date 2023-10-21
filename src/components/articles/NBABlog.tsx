@@ -37,7 +37,7 @@ const NBABlog = ({ }: NBABlogProps): JSX.Element => {
                     <div className="row gx-4 gx-lg-5 justify-content-center">
                         <div className="col-md-10 col-lg-8 col-xl-7">
                             <SectionHeading heading="The NBA League Structure"/>
-                            <p>
+                            <p style={{fontFamily: "Oswald", fontStyle: "normal"}}>
                                 The National Basketball Association (NBA) is not just one of the premier professional basketball leagues in the world, 
                                 but it's also a powerhouse when it comes to global sports branding, media reach, and player recognition.
                                 From its inception in 1946, the NBA has grown exponentially both in terms of teams and its organizational structure.
@@ -157,6 +157,10 @@ const NBABlog = ({ }: NBABlogProps): JSX.Element => {
 
 
                         </div>
+
+                        <div className="col-md-2 col-lg-1 col-xl-2 shadow-sm">
+                        </div>
+
                     </div>
                 </div>
             </article>

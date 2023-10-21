@@ -10,6 +10,7 @@ import Divider from '../utils/Divider';
 import SmallerHeading from '../utils/SmallerHeading';
 // import Divider from '../utils/Divider';
 import '../../Python.css'
+import { Link } from 'react-router-dom';
 
 interface PythonBlogProps {
     // Add any props you might need
@@ -60,7 +61,7 @@ const PythonVariablesDataBlog = ({ }: PythonBlogProps): JSX.Element => {
             <article className="mb-4">
                 <div className="container px-4 px-lg-5">
                     <div className="row gx-4 gx-lg-5 justify-content-center">
-                        <div className="col-md-10 col-lg-8 col-xl-7">
+                        <div className="col-md-11 col-lg-9 col-xl-9">
 
                             <SectionHeading style={headingStyle} heading="Python Variables and Data Types: Building Blocks of Code" />
 
@@ -129,6 +130,18 @@ const PythonVariablesDataBlog = ({ }: PythonBlogProps): JSX.Element => {
                             <p>Happy coding! 🐍🔧</p>
 
                         </div>
+
+                        <div style={{maxHeight: "600px"}} className="col-md-1 col-lg-3 col-xl-3 overflow-auto shadow-sm">
+                            <Link  className="nav-link px-lg-3 py-3 py-lg-4" to="/">Home</Link>
+                            <Divider />
+                            <Link  className="nav-link px-lg-3 py-3 py-lg-4" to="/python/variables-datatypes">Python Types</Link>
+                            <Divider />
+                            <Link  className="nav-link px-lg-3 py-3 py-lg-4" to="/python/variables-datatypes">Python Types</Link>
+                            <Divider />
+                            <Link  className="nav-link px-lg-3 py-3 py-lg-4" to="/python/variables-datatypes">Python Types</Link>
+
+                        </div>
+
                     </div>
                 </div>
             </article>
